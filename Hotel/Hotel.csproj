@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0021BCA5-C6FB-4B2D-9B38-718377273055}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hotel</RootNamespace>
+    <AssemblyName>Hotel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Hotel.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUserService.cs" />
+    <Compile Include="Common\BangGiaDichVu.cs" />
+    <Compile Include="Common\BangGiaGio.cs" />
+    <Compile Include="Common\BangGiaNgayDem.cs" />
+    <Compile Include="Common\BangGiaQuaDem.cs" />
+    <Compile Include="Common\CMConstant.cs" />
+    <Compile Include="Common\DisplayArea.cs" />
+    <Compile Include="Common\FunctionCommon.cs" />
+    <Compile Include="Common\KhuVuc.cs" />
+    <Compile Include="Common\LoaiPhong.cs" />
+    <Compile Include="Common\LoaiPhongArea.cs" />
+    <Compile Include="Common\LoaiSanPham.cs" />
+    <Compile Include="Common\MatHang.cs" />
+    <Compile Include="Common\NhomKhachHang.cs" />
+    <Compile Include="Common\NhomMatHang.cs" />
+    <Compile Include="Common\ReadWriteData2CSV.cs" />
+    <Compile Include="Common\RoomArea.cs" />
+    <Compile Include="Common\StructDataCommon.cs" />
+    <Compile Include="Common\Table.cs" />
+    <Compile Include="frmAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNew.Designer.cs">
+      <DependentUpon>frmAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewAccount.Designer.cs">
+      <DependentUpon>frmAddNewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewGroupItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewGroupItems.Designer.cs">
+      <DependentUpon>frmAddNewGroupItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChietKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChietKhau.Designer.cs">
+      <DependentUpon>frmChietKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseData.Designer.cs">
+      <DependentUpon>frmChooseData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommon.Designer.cs">
+      <DependentUpon>frmCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhMuc.Designer.cs">
+      <DependentUpon>frmDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatabase.Designer.cs">
+      <DependentUpon>frmDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGhiChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGhiChu.Designer.cs">
+      <DependentUpon>frmGhiChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroupCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroupCustomers.Designer.cs">
+      <DependentUpon>frmGroupCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhuVuc.Designer.cs">
+      <DependentUpon>frmKhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListMenu.Designer.cs">
+      <DependentUpon>frmListMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoaiSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoaiSanPham.Designer.cs">
+      <DependentUpon>frmLoaiSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatHang.Designer.cs">
+      <DependentUpon>frmMatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomType.Designer.cs">
+      <DependentUpon>frmRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTable.Designer.cs">
+      <DependentUpon>frmTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupRoom.cs" />
+    <Compile Include="Json\AddNewAccount.cs" />
+    <Compile Include="Json\SaveConfigLogin.cs" />
+    <Compile Include="Json\WriteData2Json.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddUserService.resources" />
+    <EmbeddedResource Include="frmAddNew.resources" />
+    <EmbeddedResource Include="frmAddNewAccount.resources" />
+    <EmbeddedResource Include="frmAddNewGroupItems.resources" />
+    <EmbeddedResource Include="frmChangePassword.resources" />
+    <EmbeddedResource Include="frmChietKhau.resources" />
+    <EmbeddedResource Include="frmChooseData.resources" />
+    <EmbeddedResource Include="frmCommon.resources" />
+    <EmbeddedResource Include="frmCustomer.resources" />
+    <EmbeddedResource Include="frmDanhMuc.resources" />
+    <EmbeddedResource Include="frmDatabase.resources" />
+    <EmbeddedResource Include="frmGhiChu.resources" />
+    <EmbeddedResource Include="frmGroupCustomers.resources" />
+    <EmbeddedResource Include="frmKhuVuc.resources" />
+    <EmbeddedResource Include="frmListMenu.resources" />
+    <EmbeddedResource Include="frmLoaiSanPham.resources" />
+    <EmbeddedResource Include="frmLogin.resources" />
+    <EmbeddedResource Include="frmMain.resources" />
+    <EmbeddedResource Include="frmMatHang.resources" />
+    <EmbeddedResource Include="frmRoomType.resources" />
+    <EmbeddedResource Include="frmTable.resources" />
+    <EmbeddedResource Include="GroupRoom.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
